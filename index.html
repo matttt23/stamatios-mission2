@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google Extension Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="search-box">
+        <i class="bx bx-map"></i>
+        <input type="text" placeholder="Enter your Location" />
+        <button class="bx bx-search"></button>
+      </div>
+
+      <p class="city-hide">City Hide</p>
+
+      <div class="weather-box">
+        <div class="box">
+          <div class="info-weather">
+            <div class="weather">
+              <img src="img/cloud.png" />
+              <p class="temperature">0<span>°C</span></p>
+              <p class="description">Broken Clouds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="bx bx-water"></i>
+          <div class="text">
+            <div class="info-humidity">
+              <span>0%</span>
+            </div>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+          <i class="bx bx-wind"></i>
+          <div class="text">
+            <div class="info-wind">
+              <span>0Km/h</span>
+            </div>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+      <div class="not-found">
+        <div class="box">
+          <img src="img/404.png" />
+          <p>Invalid Location!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -video background-  -->
+    <section class="header">
+      <video autoplay loop muted plays-inline class="background-clip">
+        <source src="vid/production_id_5155396 (2160p).mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <div class="cardcontainer">
+      <div class="thecard">
+        <div class="thefront">
+          <div class="greetcontainer"></div>
+          <div class="timecontainer">
+            <h1 id="current-time"></h1>
+          </div>
+          <div class="datecontainer">
+            <h1 id="date-today"></h1>
+          </div>
+        </div>
+
+        <div class="theback">
+          <h1>Quote of the Day</h1>
+          <div class="main-content">
+            <div class="text-area">
+              <span class="quote">
+                "Life is what happens when you're busy making other plans."
+              </span>
+            </div>
+            <div class="writer">- John Lennon</div>
+
+            <div class="button-area">
+              <div class="btn">
+                <button id="Qbtn">Next Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="weather.js"></script>
+        <script src="quotes.js"></script>
+        <script src="sandbox.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
